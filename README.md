@@ -1,11 +1,7 @@
-# Bocaraca
-
-[![travis build](https://img.shields.io/travis/odry1190/freetime.svg)](https://travis-ci.org/odry1190/Freetime)
+[![travis build](https://img.shields.io/travis/odry1190/Freetime.svg)](https://travis-ci.org/odry1190/Freetime)
 [![codecov coverage](https://img.shields.io/codecov/c/github/odry1190/Freetime.svg)](https://codecov.io/github/odry1190/freetime)
 [![version](https://img.shields.io/npm/v/freetime.svg?style=flat-square)](http://npmjs.com/package/freetime)
-[![MIT License](https://img.shields.io/npm/l/Freetime.svg)](http://opensource.org/licenses/MIT)
-
-Get an interval of free hours (on a day) depending on a programmed schedule.
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
 ## Installation
 
@@ -39,7 +35,7 @@ var t2 = Freetime({
 /*
   Initialize with a momentjs object.
 */
-let t3 = Freetime({
+var t3 = Freetime({
   office_schedule_start : moment({ hour : 10, minute : 0, second : 0}),
   office_schedule_end : moment({ hour : 14, minute : 0, second : 0})
 });
