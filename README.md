@@ -55,9 +55,8 @@ var free1 = t1.calculate_freetime(tasks1);
 
 Where 'start' and 'end' are momentjs objects
 */
-
-console.log(free1[0].start.format('HH:mm:ss'));
-//10:00:00
+console.log(free1[0].start.format('HH:mm:ss'));   //10:00:00
+console.log(free1[0].end.format('HH:mm:ss'));     //17:00:00
 
 ///////////////////////////////
 
@@ -78,6 +77,10 @@ var free2 = t2.calculate_freetime(tasks2);
 
 Where 'start' and 'end' are momentjs objects in each case.
 */
+console.log(free2[0].start.format('HH:mm:ss'));  //10:00:00
+console.log(free2[0].end.format('HH:mm:ss'));    //11:00:00
+console.log(free2[1].start.format('HH:mm:ss'));  //12:00:00
+console.log(free2[1].end.format('HH:mm:ss'));    //13:00:00
 
 
 ```

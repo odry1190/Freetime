@@ -197,6 +197,6 @@ class Freetime {
   }
 }
 
-export default (options) => {
-    return new Freetime(options);
-};
+module.exports = function(options) {
+  return new Freetime(options);
+}
