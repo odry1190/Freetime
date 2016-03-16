@@ -27,7 +27,11 @@ class Freetime {
           }
         }
         if (moment.isMoment(options.office_schedule_start)) {
-          this.office_schedule_start = options.office_schedule_start;
+          this.office_schedule_start = moment({
+            hour : options.office_schedule_start.get('hour'),
+            minute : options.office_schedule_start.get('minute'),
+            second : options.office_schedule_start.get('second')
+          });
         }
       }
       if (options.hasOwnProperty('office_schedule_end')) {
@@ -46,7 +50,11 @@ class Freetime {
           }
         }
         if (moment.isMoment(options.office_schedule_end)) {
-          this.office_schedule_end = options.office_schedule_end;
+          this.office_schedule_end = moment({
+            hour : options.office_schedule_end.get('hour'),
+            minute : options.office_schedule_end.get('minute'),
+            second : options.office_schedule_end.get('second')
+          });
         }
       }
       if (options.hasOwnProperty('only_office_schedule')) {
