@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "git-cz",
     "prebuild": "rm -rf lib && mkdir lib",
-    "build": "babel src/freetime.js -o lib/index.js",
+    "build": "babel src/freetime.js -o lib/freetime.js",
     "test": "mocha --compilers js:babel-register -w test/index.test.js",
     "test:coverage": "./node_modules/babel-cli/bin/babel-node.js ./node_modules/.bin/babel-istanbul cover ./node_modules/mocha/bin/_mocha -- --compilers js:babel-register test/index.test.js",
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
